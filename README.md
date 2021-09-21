@@ -14,9 +14,9 @@ Create an auth0 account and create a new "Regular web application". Go to the se
 
 Save your settings.
 
-Get the `domain`, `Client ID` and `Client Secret` from the settings page and and them to your `.env` file.
+Get the `domain`, `Client ID` and `Client Secret` from the settings page and them to your `.env` file.
 
-Run `sbt run` to start the app and try calling [http://localhost:9000/](http://localhost:9000/)
+Run `sbt run` to start the app and try calling [http://127.0.0.1:9000/](http://127.0.0.1:9000/)
 
 
 ## Issue Reporting
