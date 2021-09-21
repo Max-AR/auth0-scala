@@ -29,6 +29,7 @@ The [Responsible Disclosure Program](https://auth0.com/whitehat) details the pro
 ## Authors
 
 [Auth0](auth0.com)
+
 [Max Rosenbaum](https://www.rtechservices.io)
 
 ## License
