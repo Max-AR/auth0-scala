@@ -1,34 +1,35 @@
 # Auth0 - Scala
 
-In this repository, you'll find all the information about integrating Auth0 with Scala.
+I have updated this repo from [the original auth0 example](https://github.com/auth0/auth0-scala) to work with play 2.8.
 
-You can read how to create [Regular WebApps with Scala]() or how to create [APIs with Scala]()
+I have tested on scala 2.13.6 and JDK 11.
 
-Check out the examples that we have in here in our `examples` folder. Each of them has a README on how to run them and on how to use them.
+## Running the example
 
-## What is Auth0?
+Create an auth0 account and create a new "Regular web application". Go to the settings tab and set:  
 
-Auth0 helps you to:
+- `Allowed Callback URLs` - `http://127.0.0.1:9000/callback`
+- `Allowed web origins` - `http://127.0.0.1:9000`
+- `Allowed origins (CORS)` - `http://127.0.0.1:9000`
 
-* Add authentication with [multiple authentication sources](https://docs.auth0.com/identityproviders), either social like **Google, Facebook, Microsoft Account, LinkedIn, GitHub, Twitter, Box, Salesforce, amont others**, or enterprise identity systems like **Windows Azure AD, Google Apps, Active Directory, ADFS or any SAML Identity Provider**.
-* Add authentication through more traditional **[username/password databases](https://docs.auth0.com/mysql-connection-tutorial)**.
-* Add support for **[linking different user accounts](https://docs.auth0.com/link-accounts)** with the same user.
-* Support for generating signed [Json Web Tokens](https://docs.auth0.com/jwt) to call your APIs and **flow the user identity** securely.
-* Analytics of how, when and where users are logging in.
-* Pull data from other sources and add it to the user profile, through [JavaScript rules](https://docs.auth0.com/rules).
+Save your settings.
 
-## Create a free Auth0 Account
+Get the `domain`, `Client ID` and `Client Secret` from the settings page and and them to your `.env` file.
 
-1. Go to [Auth0](https://auth0.com) and click Sign Up.
-2. Use Google, GitHub or Microsoft Account to login.
+Run `sbt run` to start the app and try calling [http://localhost:9000/](http://localhost:9000/)
+
 
 ## Issue Reporting
 
-If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/whitehat) details the procedure for disclosing security issues.
+If you have found a bug or if you have a feature request, please report them at this repository issues section.
+Please do not report security vulnerabilities on the public GitHub issue tracker.
+The [Responsible Disclosure Program](https://auth0.com/whitehat) details the procedure for disclosing security issues.
 
-## Author
+
+## Authors
 
 [Auth0](auth0.com)
+[Max Rosenbaum](https://www.rtechservices.io)
 
 ## License
 
