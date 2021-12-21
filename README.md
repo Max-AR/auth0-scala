@@ -1,4 +1,4 @@
-# Auth0 - Scala
+# Auth0 - Scala + Play 2.8
 
 I have updated this repo from [the original auth0 example](https://github.com/auth0/auth0-scala) to work with play 2.8.
 
@@ -14,7 +14,7 @@ Create an auth0 account and create a new "Regular web application". Go to the se
 
 Save your settings.
 
-Get the `domain`, `Client ID` and `Client Secret` from the settings page and them to your `.env` file.
+Get the `domain`, `Client ID` and `Client Secret` from the settings page and add them to your `.env` file.
 
 Run `sbt run` to start the app and try calling [http://127.0.0.1:9000/](http://127.0.0.1:9000/)
 
